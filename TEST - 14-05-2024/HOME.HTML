@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /* challenge 1 */
+        const a =[1,1,2,3,5];
+        function five(x){
+              return x+5;
+        }
+        const out = a.map(five);
+        console.log(out);
+
+        /* challenge 2 */
+
+        const b = ["planes","trains","automobiles"]
+        function ss(v){
+            return v.slice(0,-1);
+        }
+        const word = b.map(ss);
+        console.log(word);
+
+        /* challege 3 */
+        const  c = ["planes","trains","automobiles"]
+        function rt(p){
+            return p.slice(0,1);
+        }
+        const single = c.map(rt);
+        console.log(single);
+
+        /* challenge 4 */
+
+    const d=["planes","trains","automobiles"]
+    function ip(o){
+        return o[0].toUpperCase()+o.slice(1);
+    }
+    const low = d.map(ip);
+    console.log(low);
+
+    /* challenge 5 */
+const arr=["goldfish", "dog", "turtle", "tiger"];
+function less(j){
+    return j.length<=5
+}
+const pet = arr.filter(less);
+console.log(pet);
+/* challenge 6 */
+
+
+
+        /* challenge 7 */
+        const seven = [1,1,2,3,5,7,9,10]
+        function four(n){
+            return n>4;
+        }
+        const sol= seven.filter(four)
+        console.log(sol);
+
+        /* challenge 8 */
+        const eight= [1,1,2,4,5,6,8,7]
+        function even (m){
+            return m%2 == 0;
+        }
+const fin = eight.filter(even);
+console.log(fin);
+
+    </script>
+</body>
+</html>
